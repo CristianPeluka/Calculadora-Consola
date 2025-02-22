@@ -10,7 +10,29 @@ namespace CalculadoraConsola
     {
         static void Main(string[] args)
         {
-            
+            int n1, n2;
+            string operacion;
+            Console.Write("Ingrese el primer numero: ");
+            n1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Ingrese el segundo numero: ");
+            n2 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("1. + \n2. - \n3. * \n4. /");
+            Console.Write("Seleccione la operacion a realizar: ");
+            operacion = Console.ReadLine();
+
+            switch (operacion)
+            {
+                case "1": Suma(n1, n2); break;
+            }
+
+
+        }
+
+        public static void Suma(int n1, int n2)
+        {
+            Console.WriteLine($"La suma de los dos numeros es {n1 + n2}");
         }
     }
 }
