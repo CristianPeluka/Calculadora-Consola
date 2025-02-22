@@ -10,7 +10,7 @@ namespace CalculadoraConsola
     {
         static void Main(string[] args)
         {
-
+            
         }
     }
 }
