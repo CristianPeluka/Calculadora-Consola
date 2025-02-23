@@ -18,6 +18,11 @@ namespace CalculadoraConsola
             nombre = "Cristian";
             edad = 29;
         }
+        // metodo
+        public void Mensaje()
+        {
+            Console.WriteLine($"nombre: {nombre}, edad: {edad}");
+        }
 
         
     }
