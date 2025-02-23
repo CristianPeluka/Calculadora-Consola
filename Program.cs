@@ -27,6 +27,7 @@ namespace CalculadoraConsola
                 case "1": Suma(n1, n2); break; // metodo para la suma
                 case "2": Resta(n1, n2); break; // metodo para la resta
                 case "3": Multiplicacion(n1, n2); break; // metodo para la multiplicacion
+                case "4": Dividir(n1, n2); break;
             }
 
 
@@ -45,6 +46,18 @@ namespace CalculadoraConsola
         public static void Multiplicacion(int n1, int n2)
         {
             Console.WriteLine($"El producto de ambos numeros es {n1 * n2}");
+        }
+
+        public static void Dividir(int n1, int n2)
+        {
+            if (n2 == 0)
+            {
+                Console.WriteLine("No se puede dividir entre cero");
+            }
+            else
+            {
+                Console.WriteLine($"La division entre los dos numeros es {n1 / n2}");
+            }
         }
     }
 }
