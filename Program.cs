@@ -24,7 +24,8 @@ namespace CalculadoraConsola
 
             switch (operacion)
             {
-                case "1": Suma(n1, n2); break;
+                case "1": Suma(n1, n2); break; // metodo para la suma
+                case "2": Resta(n1, n2); break; // metodo para la resta
             }
 
 
@@ -33,6 +34,11 @@ namespace CalculadoraConsola
         public static void Suma(int n1, int n2)
         {
             Console.WriteLine($"La suma de los dos numeros es {n1 + n2}");
+        }
+
+        public static void Resta(int n1, int n2)
+        {
+            Console.WriteLine($"La resta de los dos numero es {n1 - n2}");
         }
     }
 }
