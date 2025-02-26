@@ -12,3 +12,14 @@ Para empezar a desarrollar este proyecto pequeño declare 3 variables, dos del t
 int n1, n2;
 string operacion;
 ```
+```c#
+Console.Write("Ingrese el primer numero: ");
+n1 = int.Parse(Console.ReadLine());
+
+Console.Write("Ingrese el segundo numero: ");
+n2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("1. + \n2. - \n3. * \n4. /");
+Console.Write("Seleccione la operacion a realizar: ");
+operacion = Console.ReadLine();
+```
